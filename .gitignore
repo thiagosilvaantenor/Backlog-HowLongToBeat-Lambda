@@ -1,0 +1,40 @@
+# =========================
+# TERRAFORM
+# =========================
+# Diretório oculto do Terraform (plugins e módulos baixados)
+.terraform/
+# Arquivos de estado (NUNCA suba isso, contém dados sensíveis da sua AWS)
+*.tfstate
+*.tfstate.backup
+# Arquivos de variáveis locais
+*.tfvars
+*.tfvars.json
+# Arquivo de plano de execução
+*.tfplan
+
+# =========================
+# JAVA / MAVEN
+# =========================
+target/
+*.jar
+*.class
+.mvn/
+
+# =========================
+# PYTHON
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+# Ignora pastas de ambientes virtuais
+venv/
+env/
+.env
+# Ignora o zip gerado, pois o deploy recria ele
+function.zip
+
+# =========================
+# FRONTEND / GERAL
+# =========================
+node_modules/
+.DS_Store
